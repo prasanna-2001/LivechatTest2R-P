@@ -25,7 +25,24 @@
         var initESW = function(gslbBaseURL) {
             embedded_svc.settings.displayHelpButton = true; //Or false
             embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
-     
+
+            .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items, .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items li {
+    width: 100%;
+    color: #6d262a;
+  }
+  .embeddedServiceLiveAgentStateChatItem .rich-button-item,
+.embeddedServiceLiveAgentStateChatItem.chatMessage button{
+		color: #6d262a;
+		text-align: center;
+		font-size: 15px;
+		padding: 9px 5px;
+		display: block;
+		width: 100%;
+}
+ 
+.embeddedServiceLiveAgentStateChatItem.chatMessage button span {
+    color: #a13737;
+}
             //embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
             //embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
      
