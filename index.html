@@ -13,20 +13,7 @@
         .embeddedServiceHelpButton .helpButton .uiButton:focus {
             outline: 1px solid #005290;
         }
-    </style>
-</head>
-<body>
-    
-
-  
-     
-    <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
-    <script type='text/javascript'>
-        var initESW = function(gslbBaseURL) {
-            embedded_svc.settings.displayHelpButton = true; //Or false
-            embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
-
-            .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items, .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items li {
+	                .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items, .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items li {
     width: 100%;
     color: #6d262a;
   }
@@ -43,6 +30,20 @@
 .embeddedServiceLiveAgentStateChatItem.chatMessage button span {
     color: #a13737;
 }
+    </style>
+</head>
+<body>
+    
+
+  
+     
+    <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+    <script type='text/javascript'>
+        var initESW = function(gslbBaseURL) {
+            embedded_svc.settings.displayHelpButton = true; //Or false
+            embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+
+
             //embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
             //embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
      
